@@ -91,7 +91,7 @@ const useWalletLogic = () => {
       };
     }, []);
 
-  return (
+  return {
     account,
     inputAddress,
     isConnected,
@@ -101,7 +101,7 @@ const useWalletLogic = () => {
     connectWallet,
     getBalance,
     setInputAddress
-  );
+  };
 };
 
 export default useWalletLogic;
